@@ -1,0 +1,15 @@
+server:
+ port: 8200
+ 
+spring:
+ application:
+  name: feignenabled-client
+
+eureka:
+ client:
+  registerWithEureka: true
+  fetchRegistry: true
+  serviceUrl:
+   defaultZone: http://192.168.99.100:8761/eureka
+ instance:
+  hostname: 192.168.99.100
